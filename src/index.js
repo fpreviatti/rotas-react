@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
+import Atendimentos from "./pages/Atendimentos";
+import AgendarAtendimento from "./pages/Agendar-Atendimento";
 
 export default function App() {
   return (
@@ -12,8 +14,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="atendimentos" element={<Atendimentos />} />
+          <Route path="agendar-atendimento" element={<AgendarAtendimento />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
